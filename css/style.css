@@ -6,6 +6,9 @@
 a{
     text-decoration: none !important;
 }
+:focus {
+    outline: none !important;
+}
 a:focus {
     outline: none !important;
     outline-offset: 0 !important;
@@ -277,7 +280,7 @@ img#rt-img {
     margin:0;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    padding: 50px 0;
+    padding: 50px 0 45px;
 }
 .center-para{
     color: #ffffff;
@@ -438,7 +441,7 @@ img#rt-img {
 }
 .right-text{
     float: right;
-    width: 83%;
+    width: 81%;
 }
 img.img-128 {
     max-width: 128px !important;
@@ -856,22 +859,25 @@ textarea#message{
     background-repeat: no-repeat;
 }
 /*******************************************************Responsive******************************************************/
-@media (max-width:1921px) and (min-width: 1460px){
-    img#rt-img {
-        max-width: 735px;
-        width:100%;
-        height:auto;
-    }
-    .center-headline{
-        font-size: 28px;
-        line-height: 50px;
-    }
-}
 @media (max-width:1921px) and (min-width: 1600px){
     .scroll-top-wrapper{
         right:-145px;
     }
 }
+@media (min-width:1920px){
+    .center-headline{
+        font-size: 28px;
+        line-height: 38px;
+    }
+}
+@media  (min-width: 1460px){
+    img#rt-img {
+        max-width: 735px;
+        width:100%;
+        height:auto;
+    } 
+}
+
 @media (max-width: 1320px){
     .scroll-top-wrapper{
         right:0;
@@ -889,16 +895,16 @@ textarea#message{
 }
 @media (max-width: 1220px){
     .box-wrapper {
-        padding: 20px;
+        padding: 18px;
     }
     .center-headline {
         font-size: 20px;
         line-height: 30px;
-        padding: 35px 0;
+        padding: 30px 0 25px;
     }
     .center-para {
-        font-size: 17px;
-        line-height: 28px;
+        font-size: 16px;
+        line-height: 26px;
     }
 }
 @media (max-width: 1170px) and (min-width:1025px){
@@ -964,6 +970,7 @@ textarea#message{
         font-size: 15px;
         line-height: 24px;
    }
+   .box{min-height: 300px;}
 
 }
 @media (max-width: 1000px){
@@ -1007,14 +1014,14 @@ textarea#message{
     }
  
   
-    .box{min-height: 300px;}
+    
     .box-wrapper {
         padding: 15px;
     }
     .center-headline {
         font-size: 15px;
         line-height: 21px;
-        padding: 30px 0;
+        padding: 30px 0 25px;
     }
     .center-para {
         font-size: 14px;
@@ -1236,7 +1243,7 @@ textarea#message{
         padding: 30px 15px;
     }
     .center-headline {
-        padding: 30px 0;
+        padding: 30px 0 25px;
     }
     .wrapper{
         padding: 40px;
@@ -1334,9 +1341,13 @@ h3.news-section-heading {
 a.footer-links {
     font-size: 13px;
 }
+.scroll-top-wrapper{
+    padding: 0 10px 0 0;
+}
     .scroll-top-wrapper img {
-        width: 30px;
+        width: 25px;
         height: auto;
+      
     }
    
 }
